@@ -47,10 +47,16 @@ const AppShowcase = () => {
     <div id="work" ref={sectionRef} className="app-showcase">
       <div className="w-full">
         <div className="showcaselayout">
+          {/* Hotel Project */}
           <div ref={HotelRef} className="first-project-wrapper">
-            <div className="image-wrapper">
+            <a
+              href="https://quickstay-one-rho.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="image-wrapper"
+            >
               <img src="/images/Hotel.png" alt="Hotel-Booking App Interface" />
-            </div>
+            </a>
             <div className="text-content">
               <h2>Book hotels effortlessly with a sleek, responsive interface.</h2>
               <p className="text-white-50 md:text-xl">
@@ -61,20 +67,32 @@ const AppShowcase = () => {
           </div>
 
           <div className="project-list-wrapper overflow-hidden">
+            {/* Food Delivery Project */}
             <div className="project" ref={FoodRef}>
-              <div className="image-wrapper bg-[#FFEFDB]">
+              <a
+                href="https://food-del-frontend-03bi.onrender.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="image-wrapper bg-[#FFEFDB]"
+              >
                 <img
                   src="/images/Food-Del.png"
-                  alt="Food Delivery App Interface "
+                  alt="Food Delivery App Interface"
                 />
-              </div>
+              </a>
               <h2>Order your favorite meals quickly and conveniently.</h2>
             </div>
 
+            {/* Chat App Project */}
             <div className="project" ref={ChatAppRef}>
-              <div className="image-wrapper bg-[#FFE7EB]">
+              <a
+                href="https://fullstack-chat-app-1-xt0e.onrender.com/login"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="image-wrapper bg-[#FFE7EB]"
+              >
                 <img src="/images/Chat_App.png" alt="Chat-App interface" />
-              </div>
+              </a>
               <h2>Connect instantly with real-time messaging.</h2>
             </div>
           </div>
@@ -82,6 +100,7 @@ const AppShowcase = () => {
       </div>
     </div>
   );
+
 };
 
 export default AppShowcase;
